@@ -1,0 +1,26 @@
+{
+  "name": "iqvia-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Bill Tallitsch",
+  "homepage": "http://btallitsch.github.io/iqvia-dashboard",
+  "dependencies": {
+    "antd": "^3.13.0",
+    "chart.js": "^2.7.3",
+    "react": "^16.2.0",
+    "react-chartjs-2": "^2.7.4",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

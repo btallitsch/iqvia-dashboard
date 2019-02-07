@@ -1,0 +1,78 @@
+body {
+  padding: 15px;
+}
+
+.app {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.patient-info {
+  padding-top: 5px;
+}
+
+.title {
+  margin-top: 0;
+  border-bottom: solid 1px #e8e8e8;
+}
+
+.patient-name,
+.patient-gender,
+.patient-birthday {
+  font-size: 1.25em;
+}
+
+.patient-gender {
+  /* text-transform: uppercase; */
+  text-transform: capitalize;
+}
+
+.patient-birthday { margin: 0; }
+
+.searchbar {
+  margin: 20px 0;
+}
+
+.ant-input {
+  border-radius: 0;
+}
+
+.ant-input-search-button {
+  border-radius: 0;
+}
+
+/* @media screen and (min-width: 768px) {
+  .conditions {
+    width: 100%;
+  }
+} */
+
+.title {
+  /* width: 120px; */
+  /* height: 31px; */
+  color: #FFF;
+  /* background: rgba(255,255,255,.2); */
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+
+.logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255,255,255,.2);
+  margin: 16px 24px 16px 0;
+  float: right;
+}
+
+.simulation-button {
+  margin-top: 10px;
+}
+
+.results-table {
+  margin-top: 20px;
+}
+
+
+
+
+
