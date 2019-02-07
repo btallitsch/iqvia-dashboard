@@ -57,11 +57,16 @@ body {
 }
 
 .logo {
-  width: 120px;
-  height: 31px;
-  background: rgba(255,255,255,.2);
-  margin: 16px 24px 16px 0;
+  /* width: 120px;
+  height: 31px; */
+  /* background: rgba(255,255,255,.2); */
+  /* margin: 16px 24px 16px 0; */
   float: right;
+  background-image: url('logo.png');
+  background-repeat: no-repeat;
+  background-size: 150px;
+  width: 140px;
+  height: 50px;
 }
 
 .simulation-button {
@@ -70,6 +75,21 @@ body {
 
 .results-table {
   margin-top: 20px;
+}
+
+.editable-cell {
+  position: relative;
+}
+
+.editable-cell-value-wrap {
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.editable-row:hover .editable-cell-value-wrap {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 4px 11px;
 }
 
 

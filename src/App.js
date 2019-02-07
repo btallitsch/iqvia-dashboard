@@ -4,8 +4,8 @@ import { Layout, Menu, Row, Col } from 'antd';
 import driverData from './data/data.json';
 
 import Drivers from './components/drivers';
-import SelectedTable from './components/selected_driver';
-import SimulationResult from './components/simulation_result';
+// import SelectedTable from './components/selected_driver';
+import Simulation from './components/simulation';
 
 const { Header, Content, Footer } = Layout;
 
@@ -18,7 +18,6 @@ class App extends Component {
     }
 
   }
-
 
   render() {
     return (
@@ -49,8 +48,7 @@ class App extends Component {
                 />
               </Col>
               <Col className="gutter-row" span={12}>
-                <SelectedTable />
-                <SimulationResult />
+                <Simulation />
               </Col>
             </Row>
           </div>

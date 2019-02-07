@@ -37,7 +37,8 @@ class Drivers extends Component {
       title: 'Features',
       dataIndex: 'feature',
       key: 'feature.id',
-      width: 250,
+      // width: 250,
+      width: '75%'
     },
     {
       title: 'Score',
@@ -45,7 +46,8 @@ class Drivers extends Component {
       key: 'score.id',
       defaultSortOrder: 'descend',
       sorter: (a, b) => a.score - b.score,
-      width: 100
+      // width: 100,
+      width: '25%'
     }];
 
     const chartData = {
