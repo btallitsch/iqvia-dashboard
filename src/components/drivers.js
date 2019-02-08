@@ -77,6 +77,11 @@ class Drivers extends Component {
           onChange={this.onTableChange}
           rowSelection={rowSelection}
           dataSource={this.props.drivers}
+          onRow={(record) => ({
+            onClick: () => {
+              this.rowSelection(record);
+            },
+          })}
         />
         <Card
           size="small"

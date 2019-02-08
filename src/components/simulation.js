@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Table, Input, Button, Form, } from 'antd';
+import { Table, Popconfirm, Input, Button, Form, } from 'antd';
 import { Bar } from 'react-chartjs-2';
 
 const FormItem = Form.Item;
@@ -116,12 +116,12 @@ class Simulation extends Component {
     this.columns = [
     {
       title: 'Features',
-      dataIndex: 'features',
+      dataIndex: 'feature',
       width: '50%'
     }, 
     {
       title: 'Current Value',
-      dataIndex: 'current',
+      dataIndex: 'current_value',
       width: '25%'
     }, 
     {
@@ -129,21 +129,33 @@ class Simulation extends Component {
       dataIndex: 'next',
       editable: true,
       width: '25%'
+    },
+    {
+      title: 'operation',
+      dataIndex: 'operation',
+      render: (text, record) => (
+        this.state.dataSource.length >= 1
+          ? (
+            <Popconfirm title="Sure to delete?" onConfirm={() => this.handleDelete(record.key)}>
+              <a href="javascript:;">Delete</a>
+            </Popconfirm>
+          ) : null
+      ),
     }];
 
     this.state = {
       dataSource: [
       {
         key: '1',
-        features: 'Copay Card',
-        current: 'Y',
-        next: 'N',
+        feature: 'Copay Card',
+        current_value: 'Y',
+        next: 'N'
       },
       {
         key: '2',
-        features: 'Product Average Copay',
-        current: 35.8,
-        next: 23.6,
+        feature: 'Product Average Copay',
+        current_value: 35.8,
+        next: 23.6
       }]
    };
 
@@ -153,16 +165,21 @@ class Simulation extends Component {
 
   runSimulation() {
 
-    // let A_Feature_Value = 35.8;
-    // let A_Current_Value = 10;
-    // let B_Feature_Value = 10;
-    // let B_Current_Value = 10;
+    const A_Current_Value = Number(this.state.dataSource[2].current_value);
+    const A_Feature_Value = Number(this.state.dataSource[2].next);
+    const B_Current_Value = Number(this.state.dataSource[3].current_value);
+    const B_Feature_Value = Number(this.state.dataSource[3].next);
 
-    // let alpha = (A_Feature_Value – A_Current_Value) / A_Current_Value;
-    // let beta = (B_Feature_Value – B_Current_Value) / B_Current_Value;
-    // let patientCount = 6420 * (alpha + beta) / 2;
+    console.log(A_Current_Value, A_Feature_Value, B_Current_Value, B_Feature_Value);
 
-    let patientCount = (6420 * this.state.dataSource[1].next) / 2;
+    const alpha = (A_Feature_Value - A_Current_Value) / A_Current_Value;
+    const beta = (B_Feature_Value - B_Current_Value) / B_Current_Value;
+
+    console.log(alpha, beta);
+
+    let patientCount = 6420 * (alpha + beta) / 2;
+
+    // let patientCount = (6420 * this.state.dataSource[1].next) / 2;
 
     this.setState({
       newPatientCount: patientCount
@@ -181,20 +198,40 @@ class Simulation extends Component {
     this.setState({ dataSource: newData });
   }
 
+  handleDelete = (key) => {
+    const dataSource = [...this.state.dataSource];
+    this.setState({ dataSource: dataSource.filter(item => item.key !== key) });
+  }
+
   // contains selected row data from App/drivers
   componentWillReceiveProps(nextProps){
+    const { dataSource } = this.state;
     setTimeout(
       function() {
-        console.log(this.props.onSelectRow);
+        let newDataFormatted = {};
+        const newData = this.props.onSelectRow;
+        if(newData.length > 1) {
+          newDataFormatted = {
+            key: 4,
+            feature: newData[1].feature,
+            current_value: Number(newData[1].current_value),
+            next: null
+          }
+        } else {
+          newDataFormatted = {
+            key: 3,
+            feature: newData[0].feature,
+            current_value: Number(newData[0].current_value),
+            next: null
+          }
+        }
+        this.setState({
+          dataSource: [...dataSource, newDataFormatted]
+        });
       }
       .bind(this),
       150
     );
-    // if(nextProps.someValue!==this.props.someValue){
-    //   // Perform some operation
-    //   this.setState({someState: someValue });
-    //   this.classMethod();
-    // }
   }
 
   render(){

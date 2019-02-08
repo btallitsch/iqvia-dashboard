@@ -24,13 +24,13 @@ class App extends Component {
       rowData: rowValue
     });
 
-    setTimeout(
-      function() {
-        console.log(this.state.rowData);
-      }
-      .bind(this),
-      100
-    );
+    // setTimeout(
+    //   function() {
+    //     console.log(this.state.rowData);
+    //   }
+    //   .bind(this),
+    //   100
+    // );
   }
 
   render() {
