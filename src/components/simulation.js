@@ -132,7 +132,6 @@ class Simulation extends Component {
     }];
 
     this.state = {
-      // newPatientCount: 0,
       dataSource: [
       {
         key: '1',
@@ -154,10 +153,10 @@ class Simulation extends Component {
 
   runSimulation() {
 
-    let A_Feature_Value = 35.8;
-    let A_Current_Value = 10;
-    let B_Feature_Value = 10;
-    let B_Current_Value = 10;
+    // let A_Feature_Value = 35.8;
+    // let A_Current_Value = 10;
+    // let B_Feature_Value = 10;
+    // let B_Current_Value = 10;
 
     // let alpha = (A_Feature_Value – A_Current_Value) / A_Current_Value;
     // let beta = (B_Feature_Value – B_Current_Value) / B_Current_Value;
@@ -180,6 +179,22 @@ class Simulation extends Component {
       ...row,
     });
     this.setState({ dataSource: newData });
+  }
+
+  // contains selected row data from App/drivers
+  componentWillReceiveProps(nextProps){
+    setTimeout(
+      function() {
+        console.log(this.props.onSelectRow);
+      }
+      .bind(this),
+      150
+    );
+    // if(nextProps.someValue!==this.props.someValue){
+    //   // Perform some operation
+    //   this.setState({someState: someValue });
+    //   this.classMethod();
+    // }
   }
 
   render(){

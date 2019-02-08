@@ -4,7 +4,6 @@ import { Layout, Menu, Row, Col } from 'antd';
 import driverData from './data/data.json';
 
 import Drivers from './components/drivers';
-// import SelectedTable from './components/selected_driver';
 import Simulation from './components/simulation';
 
 const { Header, Content, Footer } = Layout;
@@ -14,19 +13,34 @@ class App extends Component {
     super(props);
 
     this.state = {
-      drivers: driverData
+      drivers: driverData,
+      rowData: []
     }
 
+  }
+
+  rowSelection = (rowValue) => {
+    this.setState({
+      rowData: rowValue
+    });
+
+    setTimeout(
+      function() {
+        console.log(this.state.rowData);
+      }
+      .bind(this),
+      100
+    );
   }
 
   render() {
     return (
       <Layout className="layout">
-        {/* <div className="title">
+        <div className="title">
           Brand Performance Analyzer
-        </div> */}
-        <Header>
           <div className="logo" />
+        </div>
+        <Header>
           <Menu
             theme="dark"
             mode="horizontal"
@@ -39,16 +53,19 @@ class App extends Component {
             <Menu.Item key="4">Logout</Menu.Item>
           </Menu>
         </Header>
-        <Content style={{ padding: '0 50px' }}>
+        <Content style={{ padding: '25px 50px' }}>
           <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
             <Row gutter={32}>
               <Col className="gutter-row" span={12}>
                 <Drivers 
                   drivers={this.state.drivers}
+                  onSelectRow={this.rowSelection}
                 />
               </Col>
               <Col className="gutter-row" span={12}>
-                <Simulation />
+                <Simulation
+                  onSelectRow={this.state.rowData}
+                 />
               </Col>
             </Row>
           </div>

@@ -2,649 +2,646 @@
 	{
 		"feature": "PHY_PROMO_NUMBER_PRODUCTS_SAMPLED",
 		"score": "0.0159",
-		"current value": "28.4745"
+		"current_value": "28.4745"
 	},
 	{
 		"feature": "PHY_MKT_TRX_INDX",
 		"score": "0.0147",
-		"current value": "31.1814"
+		"current_value": "31.1814"
 	},
 	{
 		"feature": "PHY_PROMO_NUMBER_OF_PRODUCTS_DETAILED",
 		"score": "0.0122",
-		"current value": "13.7628"
+		"current_value": "13.7628"
 	},
 	{
 		"feature": "PHY_N_PATIENT_MKT_INDX",
 		"score": "0.0117",
-		"current value": "110.8414"
+		"current_value": "110.8414"
 	},
 	{
 		"feature": "PHY_GENERIC_SHARE_TRX",
 		"score": "0.0104",
-		"current value": "0.7725"
+		"current_value": "0.7725"
 	},
 	{
 		"feature": "PHY_MKT_TRX_PCT",
 		"score": "0.0103",
-		"current value": "0.0255"
+		"current_value": "0.0255"
 	},
 	{
 		"feature": "PHY_MEDICAID_PCT",
 		"score": "0.0099",
-		"current value": "0.2742"
+		"current_value": "0.2742"
 	},
 	{
 		"feature": "PHY_COMMERCIAL_PCT",
 		"score": "0.0097",
-		"current value": "0.4240"
+		"current_value": "0.4240"
 	},
 	{
 		"feature": "PHY_COMORBID_PATS_3_PCT",
 		"score": "0.0087",
-		"current value": "0.8589"
+		"current_value": "0.8589"
 	},
 	{
 		"feature": "PAYER_TRULANCE_RJ_RATE_INDX",
 		"score": "0.0086",
-		"current value": "1.3055"
+		"current_value": "1.3055"
 	},
 	{
 		"feature": "PHY_MEDICARE_PCT",
 		"score": "0.0084",
-		"current value": "0.2139"
+		"current_value": "0.2139"
 	},
 	{
 		"feature": "PHY_CASH_PCT",
 		"score": "0.0080",
-		"current value": "0.0879"
+		"current_value": "0.0879"
 	},
 	{
 		"feature": "PHY_PROMO_NUMBER_OF_CALLS",
 		"score": "0.0079",
-		"current value": "13.7069"
+		"current_value": "13.7069"
 	},
 	{
 		"feature": "PHY_CUM_MED_BURDEN_PER_PAT_INDX",
 		"score": "0.0077",
-		"current value": "0.9826"
+		"current_value": "0.9826"
 	},
 	{
 		"feature": "PHY_PAYER_CNCNTRTR_SHARE",
 		"score": "0.0074",
-		"current value": "0.2551"
+		"current_value": "0.2551"
 	},
 	{
 		"feature": "PHY_PROMO_NUMBER_OF_LEAVE_BEHINDS",
 		"score": "0.0067",
-		"current value": "37.3620"
+		"current_value": "37.3620"
 	},
 	{
 		"feature": "PHY_BRAND_CNCNTRTR_SHARE",
 		"score": "0.0062",
-		"current value": "0.6325"
+		"current_value": "0.6325"
 	},
 	{
 		"feature": "PAYER_MARKET_RV_RATE_INDX",
 		"score": "0.0061",
-		"current value": "1.0836"
+		"current_value": "1.0836"
 	},
 	{
 		"feature": "PAT_POV_PCT",
 		"score": "0.0059",
-		"current value": "0.1588"
+		"current_value": "0.1588"
 	},
 	{
 		"feature": "PAYER_BRAND_RJ_RATE_INDX",
 		"score": "0.0059",
-		"current value": "1.0676"
+		"current_value": "1.0676"
 	},
 	{
 		"feature": "PAYER_MARKET_RJ_RATE_INDX",
 		"score": "0.0059",
-		"current value": "0.6075"
+		"current_value": "0.6075"
 	},
 	{
 		"feature": "PAYER_TRULANCE_CLAIM_CNT_INDX",
 		"score": "0.0059",
-		"current value": "15.2712"
+		"current_value": "15.2712"
 	},
 	{
 		"feature": "PAYER_TRULANCE_RV_RATE_INDX",
 		"score": "0.0046",
-		"current value": "0.8392"
+		"current_value": "0.8392"
 	},
 	{
 		"feature": "PAT_GENERIC_SHARE_TRX",
 		"score": "0.0043",
-		"current value": "0.8158"
+		"current_value": "0.8158"
 	},
 	{
 		"feature": "PHY_PROMO_NUMBER_OF_PROMOTIONAL_ITEMS_LEFT",
 		"score": "0.0036",
-		"current value": "9.7614"
+		"current_value": "9.7614"
 	},
 	{
 		"feature": "PHY_AGE",
 		"score": "0.0034",
-		"current value": "48.5802"
+		"current_value": "48.5802"
 	},
 	{
 		"feature": "PHY_GRADTN_YR_NBR",
 		"score": "0.0034",
-		"current value": "1995.8916"
+		"current_value": "1995.8916"
 	},
 	{
 		"feature": "PAYER_TRULANCE_BRAND_COPAY_DIFF_INDX",
 		"score": "0.0033",
-		"current value": "0.7457"
+		"current_value": "0.7457"
 	},
 	{
 		"feature": "PAYER_TRULANCE_COPAY_INDX",
 		"score": "0.0031",
-		"current value": "0.7350"
+		"current_value": "0.7350"
 	},
 	{
 		"feature": "PHY_PROMO_NUMBER_OF_SPEAKER_PROGRAMS",
 		"score": "0.0031",
-		"current value": "0.7073"
+		"current_value": "0.7073"
 	},
 	{
 		"feature": "PAT_AGE_INDX",
 		"score": "0.0030",
-		"current value": "4.2913"
+		"current_value": "4.2913"
 	},
 	{
 		"feature": "PAT_TOT_OPC_INDX",
 		"score": "0.0030",
-		"current value": "1.6124"
+		"current_value": "1.6124"
 	},
 	{
 		"feature": "PHY_PROMO_TOTAL_REDEMPTIONS_INSURED_DRUG_NOT_COVERED",
 		"score": "0.0028",
-		"current value": "1.0683"
+		"current_value": "1.0683"
 	},
 	{
 		"feature": "PAYER_TRULANCE_COPAY_CARD_CLAIM_PCT",
 		"score": "0.0026",
-		"current value": "0.0501"
+		"current_value": "0.0501"
 	},
 	{
 		"feature": "PAYER_TRULANCE_GENERIC_COPAY_DIFF_INDX",
 		"score": "0.0023",
-		"current value": "0.7328"
+		"current_value": "0.7328"
 	},
 	{
 		"feature": "PAT_COMMERCIAL_PCT",
 		"score": "0.0022",
-		"current value": "0.5934"
+		"current_value": "0.5934"
 	},
 	{
 		"feature": "PAT_CASH_PCT",
 		"score": "0.0021",
-		"current value": "0.0713"
+		"current_value": "0.0713"
 	},
 	{
 		"feature": "PHY_PROMO_TOTAL_REDEMPTIONS_INSURED_DRUG_COVERED",
 		"score": "0.0020",
-		"current value": "1.6345"
+		"current_value": "1.6345"
 	},
 	{
 		"feature": "PHY_PRFSN_TYP_ID",
 		"score": "0.0019",
-		"current value": "2.7025"
+		"current_value": "2.7025"
 	},
 	{
 		"feature": "PAT_CUM_MEDS_BRDN_INDX",
 		"score": "0.0018",
-		"current value": "1.4973"
+		"current_value": "1.4973"
 	},
 	{
 		"feature": "PAT_TRX_CNT_INDX",
 		"score": "0.0014",
-		"current value": "2.0607"
+		"current_value": "2.0607"
 	},
 	{
 		"feature": "PAT_TOT_N_IND_INDX",
 		"score": "0.0010",
-		"current value": "1.7048"
+		"current_value": "1.7048"
 	},
 	{
 		"feature": "PAT_GENDER_INDX",
 		"score": "0.0009",
-		"current value": "-0.2486"
+		"current_value": "-0.2486"
 	},
 	{
 		"feature": "PAT_TOT_PHY_VST_CNT",
 		"score": "0.0008",
-		"current value": "4.9555"
+		"current_value": "4.9555"
 	},
 	{
 		"feature": "PAT_ACNE_IND",
 		"score": "0.0007",
-		"current value": "0.0835"
+		"current_value": "0.0835"
 	},
 	{
 		"feature": "PAT_LRTI_IND",
 		"score": "0.0007",
-		"current value": "0.4807"
+		"current_value": "0.4807"
 	},
 	{
 		"feature": "PHY_GENDER_CD",
 		"score": "0.0006",
-		"current value": "0.0196"
+		"current_value": "0.0196"
 	},
 	{
 		"feature": "PAT_CNTR_IND",
 		"score": "0.0005",
-		"current value": "0.0479"
+		"current_value": "0.0479"
 	},
 	{
 		"feature": "PAT_UTI_IND",
 		"score": "0.0005",
-		"current value": "0.4301"
+		"current_value": "0.4301"
 	},
 	{
 		"feature": "PAT_ANGI_IND",
 		"score": "0.0004",
-		"current value": "0.3183"
+		"current_value": "0.3183"
 	},
 	{
 		"feature": "PAT_ANX_IND",
 		"score": "0.0004",
-		"current value": "0.2906"
+		"current_value": "0.2906"
 	},
 	{
 		"feature": "PAT_DEPR_IND",
 		"score": "0.0004",
-		"current value": "0.2697"
+		"current_value": "0.2697"
 	},
 	{
 		"feature": "PAT_DIAB_IND",
 		"score": "0.0004",
-		"current value": "0.1717"
+		"current_value": "0.1717"
 	},
 	{
 		"feature": "PHY_CLNCL_TRIAL_L12M_CNT",
 		"score": "0.0004",
-		"current value": "2.2507"
+		"current_value": "2.2507"
 	},
 	{
 		"feature": "PHY_PRI_SPCL_PCP",
 		"score": "0.0004",
-		"current value": "0.1528"
+		"current_value": "0.1528"
 	},
 	{
 		"feature": "PAT_CONS_IND",
 		"score": "0.0004",
-		"current value": "0.1027"
+		"current_value": "0.1027"
 	},
 	{
 		"feature": "PAT_FLU_IND",
 		"score": "0.0004",
-		"current value": "0.1341"
+		"current_value": "0.1341"
 	},
 	{
 		"feature": "PAT_GAST_IND",
 		"score": "0.0004",
-		"current value": "0.2821"
+		"current_value": "0.2821"
 	},
 	{
 		"feature": "PAT_INSO_IND",
 		"score": "0.0004",
-		"current value": "0.0669"
+		"current_value": "0.0669"
 	},
 	{
 		"feature": "PAT_LUP_IND",
 		"score": "0.0004",
-		"current value": "0.2063"
+		"current_value": "0.2063"
 	},
 	{
 		"feature": "PAT_MEDICAID_PCT",
 		"score": "0.0004",
-		"current value": "0.0758"
+		"current_value": "0.0758"
 	},
 	{
 		"feature": "PAYER_TRULANCE_COPAY_CARD_FLAG",
 		"score": "0.0004",
-		"current value": "0.5038"
+		"current_value": "0.5038"
 	},
 	{
 		"feature": "PAT_ADHD_IND",
 		"score": "0.0003",
-		"current value": "0.0415"
+		"current_value": "0.0415"
 	},
 	{
 		"feature": "PAT_CHOL_IND",
 		"score": "0.0003",
-		"current value": "0.2908"
+		"current_value": "0.2908"
 	},
 	{
 		"feature": "PAT_OART_IND",
 		"score": "0.0003",
-		"current value": "0.3262"
+		"current_value": "0.3262"
 	},
 	{
 		"feature": "PAT_VACC_IND",
 		"score": "0.0003",
-		"current value": "0.2724"
+		"current_value": "0.2724"
 	},
 	{
 		"feature": "PAT_ANSP_IND",
 		"score": "0.0002",
-		"current value": "0.0898"
+		"current_value": "0.0898"
 	},
 	{
 		"feature": "PAT_BPH_IND",
 		"score": "0.0002",
-		"current value": "0.0214"
+		"current_value": "0.0214"
 	},
 	{
 		"feature": "PAT_DE_IND",
 		"score": "0.0002",
-		"current value": "0.0275"
+		"current_value": "0.0275"
 	},
 	{
 		"feature": "PAT_HERP_IND",
 		"score": "0.0002",
-		"current value": "0.0445"
+		"current_value": "0.0445"
 	},
 	{
 		"feature": "PAT_MD_IND",
 		"score": "0.0002",
-		"current value": "0.0178"
+		"current_value": "0.0178"
 	},
 	{
 		"feature": "PAT_NP_IND",
 		"score": "0.0002",
-		"current value": "0.2048"
+		"current_value": "0.2048"
 	},
 	{
 		"feature": "PAT_OB_IND",
 		"score": "0.0002",
-		"current value": "0.0352"
+		"current_value": "0.0352"
 	},
 	{
 		"feature": "PAT_RA_IND",
 		"score": "0.0002",
-		"current value": "0.0098"
+		"current_value": "0.0098"
 	},
 	{
 		"feature": "PAT_ACS_IND",
 		"score": "0.0001",
-		"current value": "0.2840"
+		"current_value": "0.2840"
 	},
 	{
 		"feature": "PAT_AIT_IND",
 		"score": "0.0001",
-		"current value": "0.1240"
+		"current_value": "0.1240"
 	},
 	{
 		"feature": "PAT_GOUT_IND",
 		"score": "0.0001",
-		"current value": "0.0819"
+		"current_value": "0.0819"
 	},
 	{
 		"feature": "PAT_HYP_IND",
 		"score": "0.0001",
-		"current value": "0.4191"
+		"current_value": "0.4191"
 	},
 	{
 		"feature": "PAT_MEDICARE_PCT",
 		"score": "0.0001",
-		"current value": "0.0043"
+		"current_value": "0.0043"
 	},
 	{
 		"feature": "PAT_MGRN_IND",
 		"score": "0.0001",
-		"current value": "0.0668"
+		"current_value": "0.0668"
 	},
 	{
 		"feature": "PAT_NAUS_IND",
 		"score": "0.0001",
-		"current value": "0.1773"
+		"current_value": "0.1773"
 	},
 	{
 		"feature": "PAT_ND_IND",
 		"score": "0.0001",
-		"current value": "0.1372"
+		"current_value": "0.1372"
 	},
 	{
 		"feature": "PAT_OST_IND",
 		"score": "0.0001",
-		"current value": "0.0345"
+		"current_value": "0.0345"
 	},
 	{
 		"feature": "PAT_SSSI_IND",
 		"score": "0.0001",
-		"current value": "0.4713"
+		"current_value": "0.4713"
 	},
 	{
 		"feature": "PAT_URTI_IND",
 		"score": "0.0001",
-		"current value": "0.5416"
+		"current_value": "0.5416"
 	},
 	{
 		"feature": "PHY_URBAN_RURAL_IND",
 		"score": "0.0001",
-		"current value": "0.8971"
+		"current_value": "0.8971"
 	},
 	{
 		"feature": "PAT_ALZ_IND",
 		"score": "0.0001",
-		"current value": "0.0308"
+		"current_value": "0.0308"
 	},
 	{
 		"feature": "PAT_ANOR_IND",
 		"score": "0.0001",
-		"current value": "0.0288"
+		"current_value": "0.0288"
 	},
 	{
 		"feature": "PAT_EPIL_IND",
 		"score": "0.0001",
-		"current value": "0.2064"
+		"current_value": "0.2064"
 	},
 	{
 		"feature": "PAT_FIBR_IND",
 		"score": "0.0001",
-		"current value": "0.0260"
+		"current_value": "0.0260"
 	},
 	{
 		"feature": "PAT_HF_IND",
 		"score": "0.0001",
-		"current value": "0.2590"
+		"current_value": "0.2590"
 	},
 	{
 		"feature": "PAT_MI_IND",
 		"score": "0.0001",
-		"current value": "0.2982"
+		"current_value": "0.2982"
 	},
 	{
 		"feature": "PAT_MS_IND",
 		"score": "0.0001",
-		"current value": "0.0259"
+		"current_value": "0.0259"
 	},
 	{
 		"feature": "PAT_PAI_IND",
 		"score": "0.0001",
-		"current value": "0.1466"
+		"current_value": "0.1466"
 	},
 	{
 		"feature": "PAT_UC_IND",
 		"score": "0.0001",
-		"current value": "0.0025"
+		"current_value": "0.0025"
 	},
 	{
 		"feature": "PHY_PROMO_TOTAL_REDEMPTIONS_CASH",
 		"score": "0.0001",
-		"current value": "0.5006"
+		"current_value": "0.5006"
 	},
 	{
 		"feature": "PAT_AFIB_IND",
 		"score": "0.0000",
-		"current value": "0.0720"
+		"current_value": "0.0720"
 	},
 	{
 		"feature": "PAT_ASTH_IND",
 		"score": "0.0000",
-		"current value": "0.0555"
+		"current_value": "0.0555"
 	},
 	{
 		"feature": "PAT_BCAN_IND",
 		"score": "0.0000",
-		"current value": "0.0096"
+		"current_value": "0.0096"
 	},
 	{
 		"feature": "PAT_CKDE_IND",
 		"score": "0.0000",
-		"current value": "0.0514"
+		"current_value": "0.0514"
 	},
 	{
 		"feature": "PAT_COPD_IND",
 		"score": "0.0000",
-		"current value": "0.0541"
+		"current_value": "0.0541"
 	},
 	{
 		"feature": "PAT_CROH_IND",
 		"score": "0.0000",
-		"current value": "0.0026"
+		"current_value": "0.0026"
 	},
 	{
 		"feature": "PAT_ED_IND",
 		"score": "0.0000",
-		"current value": "0.0131"
+		"current_value": "0.0131"
 	},
 	{
 		"feature": "PAT_GHD_IND",
 		"score": "0.0000",
-		"current value": "0.0467"
+		"current_value": "0.0467"
 	},
 	{
 		"feature": "PAT_HEPB_IND",
 		"score": "0.0000",
-		"current value": "0.0021"
+		"current_value": "0.0021"
 	},
 	{
 		"feature": "PAT_HEPC_IND",
 		"score": "0.0000",
-		"current value": "0.0078"
+		"current_value": "0.0078"
 	},
 	{
 		"feature": "PAT_HIV_IND",
 		"score": "0.0000",
-		"current value": "0.0044"
+		"current_value": "0.0044"
 	},
 	{
 		"feature": "PAT_HRT_IND",
 		"score": "0.0000",
-		"current value": "0.0145"
+		"current_value": "0.0145"
 	},
 	{
 		"feature": "PAT_HYPO_IND",
 		"score": "0.0000",
-		"current value": "0.0097"
+		"current_value": "0.0097"
 	},
 	{
 		"feature": "PAT_IBS_IND",
 		"score": "0.0000",
-		"current value": "0.0099"
+		"current_value": "0.0099"
 	},
 	{
 		"feature": "PAT_INCO_IND",
 		"score": "0.0000",
-		"current value": "0.0356"
+		"current_value": "0.0356"
 	},
 	{
 		"feature": "PAT_INFT_IND",
 		"score": "0.0000",
-		"current value": "0.0009"
+		"current_value": "0.0009"
 	},
 	{
 		"feature": "PAT_INSO_IND.1",
 		"score": "0.0000",
-		"current value": "0.0669"
+		"current_value": "0.0669"
 	},
 	{
 		"feature": "PAT_OBES_IND",
 		"score": "0.0000",
-		"current value": "0.0857"
+		"current_value": "0.0857"
 	},
 	{
 		"feature": "PAT_OM_IND",
 		"score": "0.0000",
-		"current value": "0.4727"
+		"current_value": "0.4727"
 	},
 	{
 		"feature": "PAT_PARK_IND",
 		"score": "0.0000",
-		"current value": "0.0053"
+		"current_value": "0.0053"
 	},
 	{
 		"feature": "PAT_PCAN_IND",
 		"score": "0.0000",
-		"current value": "0.0080"
+		"current_value": "0.0080"
 	},
 	{
 		"feature": "PAT_PSOR_IND",
 		"score": "0.0000",
-		"current value": "0.0039"
+		"current_value": "0.0039"
 	},
 	{
 		"feature": "PAT_RLS_IND",
 		"score": "0.0000",
-		"current value": "0.0052"
+		"current_value": "0.0052"
 	},
 	{
 		"feature": "PAT_SC_IND",
 		"score": "0.0000",
-		"current value": "0.0552"
+		"current_value": "0.0552"
 	},
 	{
 		"feature": "PAT_STRK_IND",
 		"score": "0.0000",
-		"current value": "0.2527"
+		"current_value": "0.2527"
 	},
 	{
 		"feature": "PAT_TEST_IND",
 		"score": "0.0000",
-		"current value": "0.0079"
+		"current_value": "0.0079"
 	},
 	{
 		"feature": "PAT_VDP_IND",
 		"score": "0.0000",
-		"current value": "0.0568"
+		"current_value": "0.0568"
 	},
 	{
 		"feature": "PHY_AMA_DO_NOT_CONTACT_IND",
 		"score": "0.0000",
-		"current value": "0.0159"
+		"current_value": "0.0159"
 	},
 	{
 		"feature": "PHY_PROMO_NUMBER_OF_EMAIL_LINK_ACTION",
 		"score": "0.0000",
-		"current value": "0.0119"
+		"current_value": "0.0119"
 	},
 	{
 		"feature": "PHY_PROMO_NUMBER_OF_EMAILS",
 		"score": "0.0000",
-		"current value": "0.0021"
+		"current_value": "0.0021"
 	},
 	{
 		"feature": "PHY_PROMO_TIME_SPENT_PARTICIPATION",
 		"score": "0.0000",
-		"current value": "7.3469"
+		"current_value": "7.3469"
 	},
 	{
 		"feature": "PHY_PROMO_TIME_SPENT_VIDEO",
 		"score": "0.0000",
-		"current value": "2.5666"
+		"current_value": "2.5666"
 	},
 	{
 		"feature": "PHY_PROMO_TIME_SPENT_VIEW",
 		"score": "0.0000",
-		"current value": "7.3469"
-	},
-	{
-		"feature": ""
+		"current_value": "7.3469"
 	}
 ]

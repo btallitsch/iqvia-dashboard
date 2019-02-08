@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+#See it in action here: http://btallitsch.github.io/iqvia-dashboard
+
 ## Available Scripts
 
 In the project directory, you can run:

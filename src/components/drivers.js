@@ -16,28 +16,20 @@ class Drivers extends Component {
   }
 
   onTableChange(pagination, filters, sorter, currentDataSource) {
-    // console.log(typeof currentDataSource.currentDataSource, currentDataSource.currentDataSource);
-    // console.table(currentDataSource.currentDataSource.slice(0, 10));
-    console.log(pagination.current);
-    // console.log(this.state.currentPage);
     let first = (pagination.current * 10) - 10;
     let last = (pagination.current * 10)
 
     this.setState({
-      // chartDataSource: currentDataSource.currentDataSource.slice(11, 21)
       chartDataSource: currentDataSource.currentDataSource.slice(first, last)
     });
   }
 
   render(){
 
-    // console.log(this.props.drivers);
-
     const columns = [{
       title: 'Features',
       dataIndex: 'feature',
       key: 'feature.id',
-      // width: 250,
       width: '75%'
     },
     {
@@ -46,7 +38,6 @@ class Drivers extends Component {
       key: 'score.id',
       defaultSortOrder: 'descend',
       sorter: (a, b) => a.score - b.score,
-      // width: 100,
       width: '25%'
     }];
 
@@ -54,7 +45,6 @@ class Drivers extends Component {
       labels: this.state.chartDataSource.map(value => value.feature.substring(0,6)),
       datasets: [
         {
-          // label: this.state.chartDataSource.map(value => value.feature),
           backgroundColor: 'rgba(255,99,132,0.2)',
           borderColor: 'rgba(255,99,132,1)',
           borderWidth: 1,
@@ -65,10 +55,16 @@ class Drivers extends Component {
       ]
     };
 
-    // console.log(chartData);
-    // console.log(this.state.chartDataSource);
-    console.log(this.state.chartDataSource.map(value => value.feature));
-    // console.log(this.state.chartDataSource.map(value => value.score));
+    const rowSelection = {
+      onChange: (selectedRowKeys, selectedRows) => {
+        // console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+        this.props.onSelectRow(selectedRows);
+      },
+      getCheckboxProps: record => ({
+        disabled: record.name === 'Disabled User', // Column configuration not to be checked
+        name: record.name,
+      }),
+    };
 
     return (
 
@@ -79,6 +75,7 @@ class Drivers extends Component {
           bordered
           size="small"
           onChange={this.onTableChange}
+          rowSelection={rowSelection}
           dataSource={this.props.drivers}
         />
         <Card
