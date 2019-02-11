@@ -134,7 +134,8 @@ class Simulation extends Component {
       title: 'operation',
       dataIndex: 'operation',
       render: (text, record) => (
-        this.state.dataSource.length >= 1
+        // this.state.dataSource.length > 1
+        record.key !== '1' && record.key !== '2'
           ? (
             <Popconfirm title="Sure to delete?" onConfirm={() => this.handleDelete(record.key)}>
               <a href="javascript:;">Delete</a>
@@ -161,8 +162,8 @@ class Simulation extends Component {
    };
 
    this.runSimulation = this.runSimulation.bind(this);
-
   }
+  
 
   runSimulation() {
 
@@ -226,7 +227,6 @@ class Simulation extends Component {
             next: null
           }
         }
-        console.log(dataSource.length);
         if(dataSource.length == 3) {
           this.setState({
             clearDisabled: false
@@ -267,7 +267,7 @@ class Simulation extends Component {
         key: '1',
         result: 'Total Patient Count',
         original: 6420,
-        new: this.state.newPatientCount,
+        new: this.state.newPatientCount
       }];
 
     const chartData = {
