@@ -197,6 +197,12 @@ class Simulation extends Component {
     this.setState({ dataSource: dataSource.filter(item => item.key !== key) });
   }
 
+  handleClear = () => {
+    const dataSource = [...this.state.dataSource];
+    this.setState({ dataSource: dataSource.splice(0, dataSource.length - 2) });
+    // TODO: clear checked rows here
+  }
+
   // contains selected row data from App/drivers
   componentWillReceiveProps(nextProps){
     const { dataSource } = this.state;
@@ -204,7 +210,6 @@ class Simulation extends Component {
       function() {
         let newDataFormatted = {};
         const newData = this.props.onSelectRow;
-        // TODO: remove all selections from simulation, and checked rows from drivers
         if(newData.length > 1) {
           newDataFormatted = {
             key: 4,
@@ -320,6 +325,15 @@ class Simulation extends Component {
             onClick={this.runSimulation}
           >
             Run Simulation
+          </Button>
+          <Button
+            onClick={this.handleClear}
+            className='clear-button'
+            size="large"
+            // disabled={!hasSelected}
+            // loading={loading}
+          >
+            Clear selections
           </Button>
           <Table
             title={() => 'Simulation Result'}

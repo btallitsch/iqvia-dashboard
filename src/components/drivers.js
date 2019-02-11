@@ -7,7 +7,6 @@ class Drivers extends Component {
     super(props);
 
     this.state = { 
-      drivers: [],
       chartDataSource: this.props.drivers.slice(0, 10),
       currentPage: 1
    };
@@ -15,7 +14,7 @@ class Drivers extends Component {
    this.onTableChange = this.onTableChange.bind(this);
   }
 
-  onTableChange(pagination, filters, sorter, currentDataSource) {
+  onTableChange(pagination, currentDataSource) {
     let first = (pagination.current * 10) - 10;
     let last = (pagination.current * 10)
 

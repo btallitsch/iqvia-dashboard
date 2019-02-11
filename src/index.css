@@ -34,6 +34,11 @@
   margin-top: 10px;
 }
 
+.clear-button {
+  margin-top: 10px;
+  float: right;
+}
+
 .results-table {
   margin-top: 20px;
 }
