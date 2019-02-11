@@ -144,6 +144,7 @@ class Simulation extends Component {
     }];
 
     this.state = {
+      clearDisabled: true,
       dataSource: [
       {
         key: '1',
@@ -217,13 +218,23 @@ class Simulation extends Component {
             current_value: Number(newData[1].current_value),
             next: null
           }
-        } else {
+        } else if(newData.length == 1) {
           newDataFormatted = {
             key: 3,
             feature: newData[0].feature,
             current_value: Number(newData[0].current_value),
             next: null
           }
+        }
+        if(newData.length == 2) {
+          this.setState({
+            clearDisabled: false
+          });
+        }
+        if(newData.length > 2) {
+          this.setState({
+            clearDisabled: true
+          });
         }
         this.setState({
           dataSource: [...dataSource, newDataFormatted]
@@ -330,8 +341,7 @@ class Simulation extends Component {
             onClick={this.handleClear}
             className='clear-button'
             size="large"
-            // disabled={!hasSelected}
-            // loading={loading}
+            disabled={this.state.clearDisabled}
           >
             Clear selections
           </Button>

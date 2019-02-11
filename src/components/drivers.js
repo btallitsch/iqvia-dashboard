@@ -7,6 +7,7 @@ class Drivers extends Component {
     super(props);
 
     this.state = { 
+      drivers: [],
       chartDataSource: this.props.drivers.slice(0, 10),
       currentPage: 1
    };
@@ -14,7 +15,7 @@ class Drivers extends Component {
    this.onTableChange = this.onTableChange.bind(this);
   }
 
-  onTableChange(pagination, currentDataSource) {
+  onTableChange(pagination, filters, sorter, currentDataSource) {
     let first = (pagination.current * 10) - 10;
     let last = (pagination.current * 10)
 
@@ -57,11 +58,14 @@ class Drivers extends Component {
     const rowSelection = {
       onChange: (selectedRowKeys, selectedRows) => {
         // console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
-        this.props.onSelectRow(selectedRows);
+        if(selectedRowKeys.length <= 2) {
+          this.props.onSelectRow(selectedRows);
+        }
+        // this.props.onSelectRow(selectedRows);
       },
       getCheckboxProps: record => ({
         disabled: record.name === 'Disabled User', // Column configuration not to be checked
-        name: record.name,
+        name: record.name
       }),
     };
 
