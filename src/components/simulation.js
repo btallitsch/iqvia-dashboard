@@ -170,19 +170,13 @@ class Simulation extends Component {
     const B_Current_Value = Number(this.state.dataSource[3].current_value);
     const B_Feature_Value = Number(this.state.dataSource[3].next);
 
-    console.log(A_Current_Value, A_Feature_Value, B_Current_Value, B_Feature_Value);
-
     const alpha = (A_Feature_Value - A_Current_Value) / A_Current_Value;
     const beta = (B_Feature_Value - B_Current_Value) / B_Current_Value;
 
-    console.log(alpha, beta);
-
     let patientCount = 6420 * (alpha + beta) / 2;
 
-    // let patientCount = (6420 * this.state.dataSource[1].next) / 2;
-
     this.setState({
-      newPatientCount: patientCount
+      newPatientCount: Math.round( patientCount * 10 ) / 10
     });
     
   }
@@ -210,6 +204,7 @@ class Simulation extends Component {
       function() {
         let newDataFormatted = {};
         const newData = this.props.onSelectRow;
+        // TODO: remove all selections from simulation, and checked rows from drivers
         if(newData.length > 1) {
           newDataFormatted = {
             key: 4,

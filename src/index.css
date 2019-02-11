@@ -54,6 +54,27 @@
 }
 
 
+.login-form {
+  max-width: 300px;
+}
+.login-form-forgot {
+  float: right;
+}
+.login-form-button {
+  width: 100%;
+}
+
+.register-form {
+  max-width: 500px;
+}
+
+.forgot-form {
+  max-width: 400px;
+}
+
+.background-grey {
+  background-color: #ECECEC;
+}
 
 
 
