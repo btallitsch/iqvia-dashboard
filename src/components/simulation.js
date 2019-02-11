@@ -200,7 +200,7 @@ class Simulation extends Component {
 
   handleClear = () => {
     const dataSource = [...this.state.dataSource];
-    this.setState({ dataSource: dataSource.splice(0, dataSource.length - 2) });
+    this.setState({ clearDisabled: true, dataSource: dataSource.splice(0, dataSource.length - 2) });
     // TODO: clear checked rows here
   }
 
@@ -226,12 +226,13 @@ class Simulation extends Component {
             next: null
           }
         }
-        if(newData.length == 2) {
+        console.log(dataSource.length);
+        if(dataSource.length == 3) {
           this.setState({
             clearDisabled: false
           });
         }
-        if(newData.length > 2) {
+        else {
           this.setState({
             clearDisabled: true
           });
@@ -333,6 +334,7 @@ class Simulation extends Component {
             type="primary"
             className='simulation-button'
             size="large"
+            disabled={this.state.clearDisabled}
             onClick={this.runSimulation}
           >
             Run Simulation
