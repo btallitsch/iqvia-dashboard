@@ -12,7 +12,7 @@ class Forgot extends Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
-        this.props.history.push('/')
+        this.props.history.push(process.env.PUBLIC_URL + "/")
       }
     });
   }
@@ -55,9 +55,9 @@ class Forgot extends Component {
                         </Button>
                     </Form.Item>
                 </Form>
-                <Link to="/register">Register an Account</Link>
+                <Link to={process.env.PUBLIC_URL + "/register"}>Register an Account</Link>
                 <br />
-                <Link to="/">Login</Link>
+                <Link to={process.env.PUBLIC_URL + "/"}>Login</Link>
             </Card>
         </div>
     );

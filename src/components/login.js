@@ -12,7 +12,7 @@ class Login extends Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
-        this.props.history.push('/main')
+        this.props.history.push(process.env.PUBLIC_URL + '/main')
       }
     });
   }
@@ -34,7 +34,6 @@ class Login extends Component {
         <div style={{ background: '#ECECEC', height: '100%', padding: '30px' }}>
             <Card
             title="Login"
-            // extra={<a href="#">More</a>}
             style={{ 
                 width: 300,
                 margin: '0 auto'
@@ -62,11 +61,11 @@ class Login extends Component {
                     })(
                         <Checkbox>Remember me</Checkbox>
                     )}
-                    <Link className="login-form-forgot" to="/forgot">Forgot password?</Link>
+                    <Link className="login-form-forgot" to={process.env.PUBLIC_URL + "/forgot"}>Forgot password?</Link>
                     <Button type="primary" htmlType="submit" className="login-form-button">
                         Log in
                     </Button>
-                    Or <Link to="/register">register now!</Link>
+                    Or <Link to={process.env.PUBLIC_URL + "/register"}>register now!</Link>
                     </Form.Item>
                 </Form>
             </Card>

@@ -4,14 +4,17 @@ import Main from './components/main';
 import Login from './components/login';
 import Forgot from './components/forgot';
 import Register from './components/register';
+import createHashHistory from 'history/createHashHistory';
+    
+const hashHistory = createHashHistory({ basename: process.env.PUBLIC_URL });
 
 const App = () => (
-  <Router>
+  <Router history={hashHistory}>
     <div>
-      <Route exact path="/" component={Login} />
-      <Route path="/forgot" component={Forgot} />
-      <Route path="/register" component={Register} />
-      <Route path="/main" component={Main} />
+      <Route exact path={process.env.PUBLIC_URL + '/'} component={Login} />
+      <Route path={process.env.PUBLIC_URL + '/forgot'} component={Forgot} />
+      <Route path={process.env.PUBLIC_URL + '/register'} component={Register} />
+      <Route path={process.env.PUBLIC_URL + '/main'} component={Main} />
     </div>
   </Router>
 );

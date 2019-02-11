@@ -43,9 +43,8 @@ class Main extends Component {
             <Menu.Item key="1">Home</Menu.Item>
             <Menu.Item key="2">Simulation</Menu.Item>
             <Menu.Item key="3">Output</Menu.Item>
-            {/* <Menu.Item key="4">Logout</Menu.Item> */}
             <Menu.Item key="4">
-              <Link to="/">Logout</Link>
+              <Link to={process.env.PUBLIC_URL + "/"}>Logout</Link>
             </Menu.Item>
           </Menu>
         </Header>

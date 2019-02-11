@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Form, Icon, Input, Button, Checkbox } from 'antd'
+import { Card, Form, Input, Button } from 'antd'
 import { Link } from 'react-router-dom'
 
 class Register extends Component {
@@ -12,7 +12,7 @@ class Register extends Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
-        this.props.history.push('/')
+        this.props.history.push(process.env.PUBLIC_URL + "/")
       }
     });
   }
@@ -81,9 +81,9 @@ class Register extends Component {
                         </Button>
                     </Form.Item>
                 </Form>
-                <Link to="/">Login Page</Link>
+                <Link to={process.env.PUBLIC_URL + "/"}>Login Page</Link>
                 <br />
-                <Link to="/forgot">Forgot Password?</Link>
+                <Link to={process.env.PUBLIC_URL + "/forgot"}>Forgot Password?</Link>
             </Card>
         </div>
     );
